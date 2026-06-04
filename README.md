@@ -76,6 +76,31 @@ For local development from a clone of this repo:
 npx skills add . --skill '*'
 ```
 
+### Installing a subset
+
+The `--skill` flag accepts a space-separated list of exact skill names (glob
+patterns are not supported). To install only the TypeScript track plus the
+language-neutral general skills:
+
+```bash
+npx skills add gosukiwi/clean-code-react --skill \
+  clean-general clean-general-comments clean-general-names \
+  clean-typescript clean-typescript-functions clean-typescript-modules \
+  clean-typescript-async clean-typescript-error-handling \
+  clean-typescript-boundaries clean-typescript-objects-data \
+  clean-typescript-tests
+```
+
+To install only the Python track:
+
+```bash
+npx skills add gosukiwi/clean-code-react --skill \
+  clean-python clean-python-functions clean-python-modules \
+  clean-python-async clean-python-error-handling \
+  clean-python-boundaries clean-python-objects-data \
+  clean-python-tests
+```
+
 ### Updating
 
 Use the skills CLI to list, update, or remove installed skills:
