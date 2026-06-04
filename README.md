@@ -56,7 +56,7 @@ Skills are designed to be used together. The recommended way to install them is
 with the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add gosukiwi/clean-code-react --skill '*'
+npx skills add gosukiwi/clean-code-skills --skill '*'
 ```
 
 Use `--skill '*'` when you want a non-interactive install of the full
@@ -66,8 +66,8 @@ repository contains more than one.
 To install into a specific agent, pass one or more `--agent` values:
 
 ```bash
-npx skills add gosukiwi/clean-code-react --skill '*' --agent codex
-npx skills add gosukiwi/clean-code-react --skill '*' --agent claude-code
+npx skills add gosukiwi/clean-code-skills --skill '*' --agent codex
+npx skills add gosukiwi/clean-code-skills --skill '*' --agent claude-code
 ```
 
 For local development from a clone of this repo:
@@ -83,7 +83,7 @@ patterns are not supported). To install only the TypeScript track plus the
 language-neutral general skills:
 
 ```bash
-npx skills add gosukiwi/clean-code-react --skill \
+npx skills add gosukiwi/clean-code-skills --skill \
   clean-general clean-general-comments clean-general-names \
   clean-typescript clean-typescript-functions clean-typescript-modules \
   clean-typescript-async clean-typescript-error-handling \
@@ -94,7 +94,7 @@ npx skills add gosukiwi/clean-code-react --skill \
 To install only the Python track:
 
 ```bash
-npx skills add gosukiwi/clean-code-react --skill \
+npx skills add gosukiwi/clean-code-skills --skill \
   clean-python clean-python-functions clean-python-modules \
   clean-python-async clean-python-error-handling \
   clean-python-boundaries clean-python-objects-data \
@@ -119,7 +119,7 @@ changed instructions.
 
 Alternatively, just open up your coding agent (e.g. Codex), and type:
 
-    What's the best way to install these skills? https://github.com/gosukiwi/clean-code-react
+    What's the best way to install these skills? https://github.com/gosukiwi/clean-code-skills
 
 ### Manual
 
